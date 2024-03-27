@@ -272,7 +272,7 @@ void importDLAFFile(const char *filename, DLAFScene &s)
   r = std::fread(&s.maxDistance, sizeof(s.maxDistance), 1, fp);
   r = std::fread(s.bounds.data(), sizeof(s.bounds[0]), s.bounds.size(), fp);
 
-  s.points.resize(numParticles);
+  s.points.resize(numParticles * 3);
   r = std::fread(s.points.data(), sizeof(s.points[0]), numParticles * 3, fp);
 
   s.distances.resize(numParticles);
