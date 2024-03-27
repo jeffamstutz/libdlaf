@@ -1,4 +1,4 @@
-// Copyright 2023 Jefferson Amstutz
+// Copyright 2023-2024 Jefferson Amstutz
 // SPDX-License-Identifier: Apache-2.0
 
 #include "dlaf/DLAF.h"
