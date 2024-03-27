@@ -54,11 +54,15 @@ endif()
 ## Command line tools ##
 
 project(compute_dlaf LANGUAGES CXX)
-project_add_executable(compute_dlaf.cpp)
+project_add_executable(${PROJECT_NAME}.cpp)
 project_link_libraries(PRIVATE dlaf)
 
 project(upscale_dlaf LANGUAGES CXX)
-project_add_executable(upscale_dlaf.cpp)
+project_add_executable(${PROJECT_NAME}.cpp)
+project_link_libraries(PRIVATE dlaf)
+
+project(split_dlaf LANGUAGES CXX)
+project_add_executable(${PROJECT_NAME}.cpp)
 project_link_libraries(PRIVATE dlaf)
 
 enable_testing()
