@@ -13,6 +13,8 @@ endif()
 
 ## CMake setup ##
 
+project(dlaf LANGUAGES CXX)
+
 include(cmake/cmake_project_commands.cmake)
 
 if (DLAF_STANDALONE)
@@ -38,7 +40,6 @@ find_package(Boost REQUIRED)
 
 ## Library ##
 
-project(dlaf LANGUAGES CXX)
 project_add_library(STATIC DLAF.cpp)
 project_link_libraries(PUBLIC Boost::boost)
 project_include_directories(
