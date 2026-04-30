@@ -7,3 +7,5 @@ docs/out/*
 .vs
 out
 CMakeSettings.json
+.codex
+.claude
